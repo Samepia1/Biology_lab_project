@@ -63,6 +63,21 @@ const chessPieces = [
 function Hero() {
   return (
     <section className="relative h-screen w-full overflow-hidden bg-gradient-to-br from-charcoal via-charcoal-light to-crimson-dark flex items-center justify-center">
+      {/* Top credit banner */}
+      <motion.div
+        initial={{ opacity: 0, y: -20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+        className="absolute top-0 left-0 right-0 z-20 bg-charcoal/60 backdrop-blur-sm border-b border-gold/30 py-2.5 px-6 text-center"
+      >
+        <p className="font-body text-xs sm:text-sm text-cream tracking-wide">
+          Created by{" "}
+          <span className="text-gold-light font-semibold">Samvel Kerobyan</span>
+          <span className="mx-2 text-gold/60">&middot;</span>
+          BIOL 1003 Lab final presentation
+        </p>
+      </motion.div>
+
       {/* Floating chess pieces */}
       {chessPieces.map((piece, i) => (
         <svg

@@ -54,8 +54,8 @@ function Footer() {
         {/* Divider */}
         <div className="h-px w-24 mx-auto bg-cream/10 mb-6" />
 
-        <p className="font-body text-xs text-cream/30">
-          Made for BIO Lab
+        <p className="font-body text-xs text-cream/40">
+          Created by Samvel Kerobyan &middot; BIOL 1003 Lab final presentation
         </p>
       </motion.div>
     </footer>
